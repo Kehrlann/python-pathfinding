@@ -1,0 +1,124 @@
+{
+  "tests": [
+    {
+      "name": "maze.py: perfect-example.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_maze.TestMaze.test_maze_example",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "maze.py: perfect-example-reversed.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_maze.TestMaze.test_maze_example_reversed",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "maze.py: perfect-small.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_maze.TestMaze.test_maze_small",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "maze.py: perfect-small-middle.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_maze.TestMaze.test_maze_small_middle",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "test_pathfinding.TestPathfinding.test_maze_big",
+      "setup": "",
+      "run": "python3 -m unittest test_pathfinding.TestPathfinding.test_maze_big",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "maze.py: perfect-rectangle.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_maze.TestMaze.test_maze_rectangle",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "maze.py: perfect-big.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_maze.TestMaze.test_maze_big",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "pathfinding.py: pathfinding-example.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_pathfinding.TestPathfinding.test_pathfinding_example",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "pathfinding.py: pathfinding-medium.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_pathfinding.TestPathfinding.test_pathfinding_medium",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "pathfinding.py: pathfinding-huge.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_pathfinding.TestPathfinding.test_pathfinding_huge",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "maze.py: shortest path",
+      "setup": "",
+      "run": "python3 -m unittest test_maze.TestMaze.test_shortest_path",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 0
+    },
+    {
+      "name": "maze.py: pathfinding-huge.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_maze.TestMaze.test_maze_huge",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 0
+    }
+  ]
+}
