@@ -14,7 +14,7 @@ def parse_tuple(test_case, line_number, str_tuple):
 def __foobar(file_in):
     with open(file_in, 'r') as f:
         lines = f.readlines()
-        maze = [[True] * len(lines) for i in range(len(lines[0]))]
+        maze = [[True] * len(lines) for i in range(len(lines[0].strip("\n")))]
         start = None
         end = None
         for y, line in enumerate(lines):
@@ -43,6 +43,8 @@ def validate(test_case, module, file_in, file_out, timeout=1, path_length=None):
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
     with open(file_out, 'r') as f:
         maze, start, end = __foobar(file_in)
+        width = len(maze)
+        height = len(maze[0])
         lines = [parse_tuple(test_case, line_number, tup)
                  for line_number, tup in enumerate(f)]
         test_case.assertEqual(
@@ -54,6 +56,10 @@ def validate(test_case, module, file_in, file_out, timeout=1, path_length=None):
         xprev, yprev = start
         for line_number, line in enumerate(lines[1:], start=1):
             x, y = line
+            test_case.assertGreaterEqual(x, 0, f"Mauvaise position, ligne #{line_number}. x < 0")
+            test_case.assertLess(x, width, f"Mauvaise position, ligne #{line_number}. x >= largeur ({width})")
+            test_case.assertGreaterEqual(y, 0, f"Mauvaise position, ligne #{line_number}. y < 0")
+            test_case.assertLess(y, height, f"Mauvaise position, ligne #{line_number}. y >= hauteur ({height})")
             test_case.assertTrue(
                 maze[x][y], f"Mauvaise position, ligne #{line_number} - mur du labyrinthe")
             movement = x - xprev, y - yprev
