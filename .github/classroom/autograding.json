@@ -41,16 +41,6 @@
       "points": 1
     },
     {
-      "name": "test_pathfinding.TestPathfinding.test_maze_big",
-      "setup": "",
-      "run": "python3 -m unittest test_pathfinding.TestPathfinding.test_maze_big",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 1,
-      "points": 1
-    },
-    {
       "name": "maze.py: perfect-rectangle.txt",
       "setup": "",
       "run": "python3 -m unittest test_maze.TestMaze.test_maze_rectangle",
@@ -84,6 +74,16 @@
       "name": "pathfinding.py: pathfinding-medium.txt",
       "setup": "",
       "run": "python3 -m unittest test_pathfinding.TestPathfinding.test_pathfinding_medium",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "pathfinding.py: perfect-big.txt",
+      "setup": "",
+      "run": "python3 -m unittest test_pathfinding.TestPathfinding.test_maze_big",
       "input": "",
       "output": "",
       "comparison": "included",
